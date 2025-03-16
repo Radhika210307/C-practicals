@@ -67,4 +67,7 @@
 
 
 # practical 14
-![Image](https://github.com/user-attachments/assets/58035326-abb3-472f-8f02-15578e047929)
+![Screenshot 2025-03-16 202116](https://github.com/user-attachments/assets/dae2dff4-7d46-4eb5-b49c-b1bd778ab4f2)
+
+![Screenshot 2025-03-16 202230](https://github.com/user-attachments/assets/83b7e3b8-6a57-4f54-8d06-25ef522f9453)
+
