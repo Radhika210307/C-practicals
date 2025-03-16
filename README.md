@@ -1,13 +1,17 @@
 # C-practicals
 # practical 1
+![Screenshot 2025-03-16 203633](https://github.com/user-attachments/assets/726b8a29-11b8-49a3-9901-8a0452d89268)
 
-![Image](https://github.com/user-attachments/assets/7f740462-eebb-4dc4-a8ac-f047eda0ac65)
 
 # practical 2
-![Image](https://github.com/user-attachments/assets/42daf852-7154-4aeb-9a14-4b341e811a59)
+
+![Screenshot 2025-03-16 204806](https://github.com/user-attachments/assets/f5e80c34-47b1-402f-bc90-5a62a4a2c260)
 
 # practical 3
-![Image](https://github.com/user-attachments/assets/b42bc627-bd90-4d8e-9995-553dcb9d78df)
+![Screenshot 2025-03-16 205802](https://github.com/user-attachments/assets/156b17c1-3c93-4158-8b59-248cfe1cc796)
+![Screenshot 2025-03-16 205832](https://github.com/user-attachments/assets/4319a1de-2422-4415-97f6-dac93938e59f)
+
+
 
 # practical 4
 ![Image](https://github.com/user-attachments/assets/83258d6c-aa48-420b-951b-3e44317be151)
