@@ -1,4 +1,4 @@
-# C-practicals
+# C++practicals
 # practical 1
 ![Screenshot 2025-03-16 203633](https://github.com/user-attachments/assets/726b8a29-11b8-49a3-9901-8a0452d89268)
 
