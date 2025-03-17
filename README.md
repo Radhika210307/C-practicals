@@ -1,9 +1,11 @@
 # C++practicals
 # practical 1
-Write a program to compute the sum of first n terms of the following series 
+**Write a program to compute the sum of first n terms of the following series 
 S=1/1^(1-1)/(2^2)+1/(3^3)-...1/(n^n), where ^ is exponentiation
 The number of terms n is to be taken from user through cammand line. If command line
 argument is not found then prompt the user to enter the value of n.
+**
+
 
 
 #include <iostream>
@@ -29,6 +31,10 @@ int n;
     cout << "Sum of series: <<< seriesSum(n) << endl;
     return 0;
 }
+
+
+
+
 
 ![Screenshot 2025-03-16 203633](https://github.com/user-attachments/assets/726b8a29-11b8-49a3-9901-8a0452d89268)
 
