@@ -6,7 +6,29 @@ The number of terms n is to be taken from user through cammand line. If command 
 argument is not found then prompt the user to enter the value of n.
 
 
+#include <iostream>
+#include <cmath> // For pow()
+using namespace std;
 
+double seriesSum(int n) {
+    double sum = 0;
+    for (int i=1; i <= n; i++) {
+        double term 1.0/pow(i, i);
+        if (i%2==0) (
+            sum -= term; // Alternate terms are negative
+        } else {
+            sum += term;
+        }
+   }
+   return sum;
+}
+int main() {
+int n;
+    cout << "Enter the number of terms: ";
+    cin >> n;
+    cout << "Sum of series: <<< seriesSum(n) << endl;
+    return 0;
+}
 
 ![Screenshot 2025-03-16 203633](https://github.com/user-attachments/assets/726b8a29-11b8-49a3-9901-8a0452d89268)
 
