@@ -1,4 +1,4 @@
-# C++practicals
+```# C++practicals
 # practical 1
 **Write a program to compute the sum of first n terms of the following series 
 S=1/1^(1-1)/(2^2)+1/(3^3)-...1/(n^n), where ^ is exponentiation
@@ -40,6 +40,9 @@ int n;
 
 
 # practical 2
+
+
+
 
 ![Screenshot 2025-03-16 204806](https://github.com/user-attachments/assets/f5e80c34-47b1-402f-bc90-5a62a4a2c260)
 
