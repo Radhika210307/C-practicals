@@ -40,6 +40,8 @@ int n;
 
 
 # practical 2
+**write a program to remove the duplicates from an array.**
+
 
 #include <iostream>
 #include <vector>
@@ -68,6 +70,7 @@ int main() {
 ![Screenshot 2025-03-16 204806](https://github.com/user-attachments/assets/f5e80c34-47b1-402f-bc90-5a62a4a2c260)
 
 # practical 3
+write a program that prints a table  indicating the number of occurrences of each alphabet in the text entered as command line arguments.
 
 #include <iostream>
 #include <string>
@@ -105,8 +108,16 @@ int main() {
 
 
 # practical 4
+write a menu driven program to perform following operations on strings (without using inbuilt string functions):
+a) show address of each character in string .
+b) concatenate two strings.
+c) compare two strings.
+d) convert length of the string (use pointers).
+e) convert all lowercase character to uppercase.
+f) reverse the string.
 
-include <cstring> // For strlen()
+
+#include <cstring> // For strlen()
 using namespace std;
 
 // Function to display ASCII values of each character in a string
@@ -214,18 +225,33 @@ int main() {
 
 
 # practical 5
+write a program to merge two ordered arrays to get a single  ordered array.
+
 ![Image](https://github.com/user-attachments/assets/d4ef3150-3a13-40ec-acb2-8bfb3ff37550)
 ![Image](https://github.com/user-attachments/assets/2bf3948f-7613-4f07-b83f-d27b3e03315b)
 
 # practical 6
+write a program to search a given element in a set of N numbers using binary search
+1) with recursion
+2) without recursion
+
 ![Image](https://github.com/user-attachments/assets/1263bf80-1fe7-414e-8d4e-7ffdf734c067)
 ![Image](https://github.com/user-attachments/assets/90b5beaa-c896-4245-a73a-73b86e02fd02)
 
 # practical 7
+write a program to calculate GCD of two numbers
+1)  with recursion
+2) without recursion
+
 ![Image](https://github.com/user-attachments/assets/563abfe4-d353-4e7e-a902-d253853231c2)
 ![Image](https://github.com/user-attachments/assets/8732513b-d591-4eb2-a2c1-9e124c74ef3d)
 
-# practical 8 
+# practical 8
+create a matrix class. write a menu- drive program to perform following matrix operations:
+a)  sum
+b) product
+c) tranport
+
 ![Image](https://github.com/user-attachments/assets/59d3f351-5d7e-4101-82f7-6c2ab3ad4ff0)
 ![Image](https://github.com/user-attachments/assets/c66977ca-52ec-4147-8a34-defe22a8ade1)
 ![Image](https://github.com/user-attachments/assets/0f3de777-c39a-46b5-92db-4fe3647fc1fb)
