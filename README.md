@@ -257,6 +257,11 @@ c) tranport
 ![Image](https://github.com/user-attachments/assets/0f3de777-c39a-46b5-92db-4fe3647fc1fb)
 
 # practical 9
+Define a class Person having name as a data member. Inherit two classes Student and
+Employec from Person. Student has additional attributes as course, marks nd yeur and
+Employee has department and salary. Write display() method in all the thee classes to
+display the coresponding attributes. Provide the necessary methods to show runtime
+polymorphism.
 
 #include <iostream>
 using namespace std;
@@ -326,16 +331,25 @@ int main() {
 
 
 # practical 10
+Create a class Triangle. Include overloaded functions for calculating area Overload
+assignment operator and equality operator.
+
 ![Image](https://github.com/user-attachments/assets/31b3c6cd-8989-400c-8108-7894e6a36716)
 
 ![Image](https://github.com/user-attachments/assets/9e94c24c-6a51-4df2-bcb6-3773f8d93819)
 
 # practical 11
+Write a program to read two numbers p und q. If q is O then throw in exception else
+display the result of p/q.
+
 ![Image](https://github.com/user-attachments/assets/fd428fa0-ab6e-472f-b107-782bc081a83f)
 
 ![Image](https://github.com/user-attachments/assets/5554405b-2237-4d24-b663-2fcecc6284df)
 
 # practical 12
+Rewrite Matris class of Q8 with exception handling. Esceptions should be thrown by
+the functions if matrices passed to them are incompatible and handled by main() function.
+
 ![Image](https://github.com/user-attachments/assets/9517f2bd-af51-4fbe-b48d-924ddae7fc9f)
 
 ![Image](https://github.com/user-attachments/assets/48f116e4-562a-4b26-b8c9-0152113d38b5)
@@ -343,6 +357,9 @@ int main() {
 ![Image](https://github.com/user-attachments/assets/b51e6005-f1a2-4ef3-b6cf-03cf99fdbed2)
 
 # practical 13
+Create a class Student containing fields for Roll No., Name, Class, Year and Total
+Marks. Write a program to store 5 objects of Student class in a file. Retrieve these records
+from file and display them.
 
 #include <iostream>
 using namespace std;
@@ -395,6 +412,7 @@ int main() {
 
 
 # practical 14
+**copy the content of one text file to another file,after removing all whitespaces.**
 
 #include <iostream>
 #include <fstream>  // For file handling
