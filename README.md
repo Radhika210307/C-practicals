@@ -108,14 +108,14 @@ int main() {
 
 
 # practical 4
-write a menu driven program to perform following operations on strings (without using inbuilt string functions):
+**write a menu driven program to perform following operations on strings (without using inbuilt string functions):
 a) show address of each character in string .
 b) concatenate two strings.
 c) compare two strings.
 d) convert length of the string (use pointers).
 e) convert all lowercase character to uppercase.
 f) reverse the string.
-
+**
 
 #include <cstring> // For strlen()
 using namespace std;
@@ -225,8 +225,36 @@ int main() {
 
 
 # practical 5
-write a program to merge two ordered arrays to get a single  ordered array.
+**write a program to merge two ordered arrays to get a single  ordered array.**
 
+#include <iostream>
+#include <vector>
+using namespace std;
+vector<int> mergeArrays(vector<int>& arr1, vector<int>& arr2) {
+vector<int> merged;
+int i =0, j =0;
+
+while (i < arr1.size() && j < arr2.size()) {
+if (arr1[i] < arr2[j])
+merged.push_back(arr1[i++]);
+else
+merged.push_back(arr2[j++]);
+
+while (i < arr1.size()) merged.push_back(arr1[i++]);
+while (j < arr2.size()) merged.push_back(arr2[j++]);
+
+return merged;
+
+int main() {
+vector<int> arr1 = {1, 3, 5, 7};
+vector<int> arr2={2, 4,6,8};
+
+vector<int> merged = mergeArrays(arr1, arr2);
+
+cout << "Merged sorted array: ";
+for (int num : merged) cout << num << " ";
+
+return 0;
 ![Image](https://github.com/user-attachments/assets/d4ef3150-3a13-40ec-acb2-8bfb3ff37550)
 ![Image](https://github.com/user-attachments/assets/2bf3948f-7613-4f07-b83f-d27b3e03315b)
 
@@ -235,6 +263,49 @@ write a program to search a given element in a set of N numbers using binary sea
 1) with recursion
 2) without recursion
 
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// Recursive binary search
+int binarySearchRecursive(vector<int>& arr, int left, int right, int key) {
+if (left > right) return -1;
+int mid = left + (right - left) / 2;
+
+if (arr[mid] == key) return mid;
+if (arr[mid] > key) return binarySearchRecursive(arr, left, mid - 1, key);
+return binarySearchRecursive(arr, mid + 1, right, key);
+
+// Iterative binary search
+int binarySearchIterative(vector<int>& arr, int key) {
+int left = 0, right = arr.size() - 1;
+while (left <= right) {
+int mid = left + (right - left) / 2;
+if (arr[mid] == key) return mid;
+if (arr[mid] > key) right = mid - 1;
+else left = mid + 1;
+
+return -1;
+
+int main() {
+vector<int> arr = {1, 3, 5, 7, 9, 11};
+int key = 5;
+
+// Recursive search
+int indexRec = binarySearchRecursive(arr, 0, arr.size() 1, key);
+" << (indexRec != -1 ? "Found at index " + to_string(indexRec) : "Not found") << endl;
+
+int indexIter = binarySearchIterative(arr, key);
+<< (indexIter != -1 ? "Found at index " + to_string(indexIter) : "Not found") << endl;
+
+cout << "Recursive Binary Search:
+
+// Iterative search
+
+cout << "Iterative Binary Search:
+
+return 0;
 ![Image](https://github.com/user-attachments/assets/1263bf80-1fe7-414e-8d4e-7ffdf734c067)
 ![Image](https://github.com/user-attachments/assets/90b5beaa-c896-4245-a73a-73b86e02fd02)
 
@@ -243,6 +314,35 @@ write a program to calculate GCD of two numbers
 1)  with recursion
 2) without recursion
 
+
+#include <iostream>
+using namespace std;
+
+// Recursive GCD
+int gcdRecursive(int a, int b) {
+return (b == 0) ? a : gcdRecursive(b, a % b);
+
+// Non-recursive GCD
+int gcdIterative(int a, int b) {
+while (b != 0) {
+int temp = b;
+b = a % b;
+a = temp;
+
+return a;
+
+int main() {
+int a, b;
+cout << "Enter two numbers: ";
+cin >> a >> b;
+
+cout << "GCD (Recursive):
+cout << "GCD (Iterative):
+
+return 0;
+
+" << gcdRecursive(a, b) << endl;
+<< gcdIterative(a, b) << endl;
 ![Image](https://github.com/user-attachments/assets/563abfe4-d353-4e7e-a902-d253853231c2)
 ![Image](https://github.com/user-attachments/assets/8732513b-d591-4eb2-a2c1-9e124c74ef3d)
 
@@ -334,6 +434,32 @@ int main() {
 Create a class Triangle. Include overloaded functions for calculating area Overload
 assignment operator and equality operator.
 
+
+#include <iostream>
+using namespace std;
+
+class Triangle {
+public:
+// Area with base & height
+double area(double base, double height) {
+return 0.5 * base * height;
+
+// Area with 3 sides (Heron's formula)
+double area(double a, double b, double c) {
+double s = (a + b + c) / 2;
+return sqrt(s * (s - a) * (s -b)* (s -c));
+
+}
+
+}
+
+};
+
+int main() {
+Triangle t;
+cout << "Area (Base, Height): " << t.area(5,10) << endl;
+cout << "Area (Three Sides): " << t.area(3, 4, 5) << endl;
+return 0;
 ![Image](https://github.com/user-attachments/assets/31b3c6cd-8989-400c-8108-7894e6a36716)
 
 ![Image](https://github.com/user-attachments/assets/9e94c24c-6a51-4df2-bcb6-3773f8d93819)
@@ -341,6 +467,33 @@ assignment operator and equality operator.
 # practical 11
 Write a program to read two numbers p und q. If q is O then throw in exception else
 display the result of p/q.
+
+#include <iostream>
+#include <stdexcept>
+using namespace std;
+
+class MatrixException : public exception {
+public:
+const char* what() const throw() {
+return "Matrix dimensions are incompatible!";
+
+}
+
+};
+
+void checkCompatibility(int rows1, int cols1, int rows2, int cols2) {
+if (cols1 != rows2)
+throw MatrixException();
+
+int main() {
+try {
+checkCompatibility(2,6,4,2);
+} catch (MatrixException& e) {
+cout << "Error: " << e.what() << endl;
+
+return 0;
+
+}
 
 ![Image](https://github.com/user-attachments/assets/fd428fa0-ab6e-472f-b107-782bc081a83f)
 
@@ -350,6 +503,43 @@ display the result of p/q.
 Rewrite Matris class of Q8 with exception handling. Esceptions should be thrown by
 the functions if matrices passed to them are incompatible and handled by main() function.
 
+
+#include <iostream>
+#include <stdexcept>
+using namespace std;
+
+class PrimeException : public exception {
+public:
+const char* what() const throw() {
+return "Number must be greater than 1!";
+
+// Function to check if a number is prime
+bool isPrime(int num) {
+if (num < 2)
+throw PrimeException();
+
+for (int i = 2; i * i <= num; i++) {
+if (num % i == 0)
+return false;
+
+return true;
+
+int main() {
+int num;
+cout << "Enter a number: ";
+cin >> num;
+
+try {
+if (isPrime(num))
+cout << num << " is a prime number. \n";
+else
+cout << num << " is not a prime number. \n";
+} catch (PrimeException& e) {
+cout << "Error: " << e.what() << endl;
+
+return 0;
+
+}
 ![Image](https://github.com/user-attachments/assets/9517f2bd-af51-4fbe-b48d-924ddae7fc9f)
 
 ![Image](https://github.com/user-attachments/assets/48f116e4-562a-4b26-b8c9-0152113d38b5)
