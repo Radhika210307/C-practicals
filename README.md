@@ -1,4 +1,4 @@
-```# C++practicals
+# C++practicals
 # practical 1
 **Write a program to compute the sum of first n terms of the following series 
 S=1/1^(1-1)/(2^2)+1/(3^3)-...1/(n^n), where ^ is exponentiation
@@ -7,7 +7,7 @@ argument is not found then prompt the user to enter the value of n.
 **
 
 
-
+```c++
 #include <iostream>
 #include <cmath> // For pow()
 using namespace std;
@@ -32,7 +32,7 @@ int n;
     return 0;
 }
 
-
+```
 
 
 
@@ -42,7 +42,7 @@ int n;
 # practical 2
 **write a program to remove the duplicates from an array.**
 
-
+```c++
 #include <iostream>
 #include <vector>
 #include <set>
@@ -66,12 +66,12 @@ int main() {
     return 0;
 }
 
-
+```
 ![Screenshot 2025-03-16 204806](https://github.com/user-attachments/assets/f5e80c34-47b1-402f-bc90-5a62a4a2c260)
 
 # practical 3
 write a program that prints a table  indicating the number of occurrences of each alphabet in the text entered as command line arguments.
-
+```c++
 #include <iostream>
 #include <string>
 #include <map>
@@ -100,7 +100,7 @@ int main() {
     return 0;
 }
 
-
+```
 
 ![Screenshot 2025-03-16 205802](https://github.com/user-attachments/assets/156b17c1-3c93-4158-8b59-248cfe1cc796)
 ![Screenshot 2025-03-16 205832](https://github.com/user-attachments/assets/4319a1de-2422-4415-97f6-dac93938e59f)
@@ -116,7 +116,7 @@ d) convert length of the string (use pointers).
 e) convert all lowercase character to uppercase.
 f) reverse the string.
 **
-
+```c++
 #include <cstring> // For strlen()
 using namespace std;
 
@@ -215,7 +215,7 @@ int main() {
     return 0;
 }
 
-
+```
 ![Image](https://github.com/user-attachments/assets/83258d6c-aa48-420b-951b-3e44317be151)
 ![Image](https://github.com/user-attachments/assets/857e1af8-6c37-4ff4-a208-783cc7299e9d)
 
@@ -226,7 +226,7 @@ int main() {
 
 # practical 5
 **write a program to merge two ordered arrays to get a single  ordered array.**
-
+```c++
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -255,6 +255,7 @@ cout << "Merged sorted array: ";
 for (int num : merged) cout << num << " ";
 
 return 0;
+```
 ![Image](https://github.com/user-attachments/assets/d4ef3150-3a13-40ec-acb2-8bfb3ff37550)
 ![Image](https://github.com/user-attachments/assets/2bf3948f-7613-4f07-b83f-d27b3e03315b)
 
@@ -263,7 +264,7 @@ write a program to search a given element in a set of N numbers using binary sea
 1) with recursion
 2) without recursion
 
-
+```c++
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -306,6 +307,7 @@ cout << "Recursive Binary Search:
 cout << "Iterative Binary Search:
 
 return 0;
+```
 ![Image](https://github.com/user-attachments/assets/1263bf80-1fe7-414e-8d4e-7ffdf734c067)
 ![Image](https://github.com/user-attachments/assets/90b5beaa-c896-4245-a73a-73b86e02fd02)
 
@@ -314,7 +316,7 @@ write a program to calculate GCD of two numbers
 1)  with recursion
 2) without recursion
 
-
+```c++
 #include <iostream>
 using namespace std;
 
@@ -343,6 +345,7 @@ return 0;
 
 " << gcdRecursive(a, b) << endl;
 << gcdIterative(a, b) << endl;
+```
 ![Image](https://github.com/user-attachments/assets/563abfe4-d353-4e7e-a902-d253853231c2)
 ![Image](https://github.com/user-attachments/assets/8732513b-d591-4eb2-a2c1-9e124c74ef3d)
 
@@ -362,7 +365,7 @@ Employec from Person. Student has additional attributes as course, marks nd yeur
 Employee has department and salary. Write display() method in all the thee classes to
 display the coresponding attributes. Provide the necessary methods to show runtime
 polymorphism.
-
+```c++
 #include <iostream>
 using namespace std;
 
@@ -422,7 +425,7 @@ int main() {
     cout << "\nEmployee Details:\n";
     e.display();
 };
-
+```
 ![Image](https://github.com/user-attachments/assets/38809941-9e71-4033-ac3e-1aa708e02c20)
 
 ![Image](https://github.com/user-attachments/assets/adcf7983-343a-4fbf-9dbe-94e4c7b8ddb1)
@@ -434,7 +437,7 @@ int main() {
 Create a class Triangle. Include overloaded functions for calculating area Overload
 assignment operator and equality operator.
 
-
+```c++
 #include <iostream>
 using namespace std;
 
@@ -460,6 +463,7 @@ Triangle t;
 cout << "Area (Base, Height): " << t.area(5,10) << endl;
 cout << "Area (Three Sides): " << t.area(3, 4, 5) << endl;
 return 0;
+```
 ![Image](https://github.com/user-attachments/assets/31b3c6cd-8989-400c-8108-7894e6a36716)
 
 ![Image](https://github.com/user-attachments/assets/9e94c24c-6a51-4df2-bcb6-3773f8d93819)
@@ -468,6 +472,7 @@ return 0;
 Write a program to read two numbers p und q. If q is O then throw in exception else
 display the result of p/q.
 
+```c++
 #include <iostream>
 #include <stdexcept>
 using namespace std;
@@ -494,7 +499,7 @@ cout << "Error: " << e.what() << endl;
 return 0;
 
 }
-
+```
 ![Image](https://github.com/user-attachments/assets/fd428fa0-ab6e-472f-b107-782bc081a83f)
 
 ![Image](https://github.com/user-attachments/assets/5554405b-2237-4d24-b663-2fcecc6284df)
@@ -503,7 +508,7 @@ return 0;
 Rewrite Matris class of Q8 with exception handling. Esceptions should be thrown by
 the functions if matrices passed to them are incompatible and handled by main() function.
 
-
+```c++
 #include <iostream>
 #include <stdexcept>
 using namespace std;
@@ -540,6 +545,7 @@ cout << "Error: " << e.what() << endl;
 return 0;
 
 }
+```
 ![Image](https://github.com/user-attachments/assets/9517f2bd-af51-4fbe-b48d-924ddae7fc9f)
 
 ![Image](https://github.com/user-attachments/assets/48f116e4-562a-4b26-b8c9-0152113d38b5)
@@ -551,6 +557,7 @@ Create a class Student containing fields for Roll No., Name, Class, Year and Tot
 Marks. Write a program to store 5 objects of Student class in a file. Retrieve these records
 from file and display them.
 
+```c++
 #include <iostream>
 using namespace std;
 
@@ -594,7 +601,7 @@ int main() {
 
     return 0;
 }
-
+```
 
 ![Image](https://github.com/user-attachments/assets/1546b8b9-5b50-4a15-ae6b-d2aa2eaae97d)
 ![Screenshot 2025-03-16 200404](https://github.com/user-attachments/assets/9a4b1607-1c69-4ca9-a754-1d6cb0749e82)
@@ -604,6 +611,7 @@ int main() {
 # practical 14
 **copy the content of one text file to another file,after removing all whitespaces.**
 
+```c++
 #include <iostream>
 #include <fstream>  // For file handling
 #include <cctype>   // For isspace() function
@@ -645,7 +653,7 @@ int main() {
     
     return 0;
 }
-
+```
 ![Screenshot 2025-03-16 202116](https://github.com/user-attachments/assets/dae2dff4-7d46-4eb5-b49c-b1bd778ab4f2)
 
 ![Screenshot 2025-03-16 202230](https://github.com/user-attachments/assets/83b7e3b8-6a57-4f54-8d06-25ef522f9453)
