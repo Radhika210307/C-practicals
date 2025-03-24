@@ -36,6 +36,14 @@ int n;
 
 
 
+
+
+
+
+
+
+
+
 ![Screenshot 2025-03-16 203633](https://github.com/user-attachments/assets/726b8a29-11b8-49a3-9901-8a0452d89268)
 
 
@@ -67,10 +75,21 @@ int main() {
 }
 
 ```
+
+
+
+
+
+
+
+
+
 ![Screenshot 2025-03-16 204806](https://github.com/user-attachments/assets/f5e80c34-47b1-402f-bc90-5a62a4a2c260)
 
 # practical 3
 write a program that prints a table  indicating the number of occurrences of each alphabet in the text entered as command line arguments.
+
+
 ```c++
 #include <iostream>
 #include <string>
@@ -102,6 +121,12 @@ int main() {
 
 ```
 
+
+
+
+
+
+
 ![Screenshot 2025-03-16 205802](https://github.com/user-attachments/assets/156b17c1-3c93-4158-8b59-248cfe1cc796)
 ![Screenshot 2025-03-16 205832](https://github.com/user-attachments/assets/4319a1de-2422-4415-97f6-dac93938e59f)
 
@@ -116,6 +141,7 @@ d) convert length of the string (use pointers).
 e) convert all lowercase character to uppercase.
 f) reverse the string.
 **
+
 ```c++
 #include <cstring> // For strlen()
 using namespace std;
@@ -214,8 +240,13 @@ int main() {
 
     return 0;
 }
-
 ```
+
+
+
+
+
+
 ![Image](https://github.com/user-attachments/assets/83258d6c-aa48-420b-951b-3e44317be151)
 ![Image](https://github.com/user-attachments/assets/857e1af8-6c37-4ff4-a208-783cc7299e9d)
 
@@ -256,6 +287,12 @@ for (int num : merged) cout << num << " ";
 
 return 0;
 ```
+
+
+
+
+
+
 ![Image](https://github.com/user-attachments/assets/d4ef3150-3a13-40ec-acb2-8bfb3ff37550)
 ![Image](https://github.com/user-attachments/assets/2bf3948f-7613-4f07-b83f-d27b3e03315b)
 
@@ -308,6 +345,13 @@ cout << "Iterative Binary Search:
 
 return 0;
 ```
+
+
+
+
+
+
+
 ![Image](https://github.com/user-attachments/assets/1263bf80-1fe7-414e-8d4e-7ffdf734c067)
 ![Image](https://github.com/user-attachments/assets/90b5beaa-c896-4245-a73a-73b86e02fd02)
 
@@ -346,6 +390,13 @@ return 0;
 " << gcdRecursive(a, b) << endl;
 << gcdIterative(a, b) << endl;
 ```
+
+
+
+
+
+
+
 ![Image](https://github.com/user-attachments/assets/563abfe4-d353-4e7e-a902-d253853231c2)
 ![Image](https://github.com/user-attachments/assets/8732513b-d591-4eb2-a2c1-9e124c74ef3d)
 
@@ -365,6 +416,7 @@ Employec from Person. Student has additional attributes as course, marks nd yeur
 Employee has department and salary. Write display() method in all the thee classes to
 display the coresponding attributes. Provide the necessary methods to show runtime
 polymorphism.
+
 ```c++
 #include <iostream>
 using namespace std;
@@ -426,6 +478,11 @@ int main() {
     e.display();
 };
 ```
+
+
+
+
+
 ![Image](https://github.com/user-attachments/assets/38809941-9e71-4033-ac3e-1aa708e02c20)
 
 ![Image](https://github.com/user-attachments/assets/adcf7983-343a-4fbf-9dbe-94e4c7b8ddb1)
@@ -464,6 +521,11 @@ cout << "Area (Base, Height): " << t.area(5,10) << endl;
 cout << "Area (Three Sides): " << t.area(3, 4, 5) << endl;
 return 0;
 ```
+
+
+
+
+
 ![Image](https://github.com/user-attachments/assets/31b3c6cd-8989-400c-8108-7894e6a36716)
 
 ![Image](https://github.com/user-attachments/assets/9e94c24c-6a51-4df2-bcb6-3773f8d93819)
@@ -500,6 +562,10 @@ return 0;
 
 }
 ```
+
+
+
+
 ![Image](https://github.com/user-attachments/assets/fd428fa0-ab6e-472f-b107-782bc081a83f)
 
 ![Image](https://github.com/user-attachments/assets/5554405b-2237-4d24-b663-2fcecc6284df)
@@ -546,6 +612,12 @@ return 0;
 
 }
 ```
+
+
+
+
+
+
 ![Image](https://github.com/user-attachments/assets/9517f2bd-af51-4fbe-b48d-924ddae7fc9f)
 
 ![Image](https://github.com/user-attachments/assets/48f116e4-562a-4b26-b8c9-0152113d38b5)
@@ -602,6 +674,10 @@ int main() {
     return 0;
 }
 ```
+
+
+
+
 
 ![Image](https://github.com/user-attachments/assets/1546b8b9-5b50-4a15-ae6b-d2aa2eaae97d)
 ![Screenshot 2025-03-16 200404](https://github.com/user-attachments/assets/9a4b1607-1c69-4ca9-a754-1d6cb0749e82)
