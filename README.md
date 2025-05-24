@@ -519,6 +519,7 @@ Triangle t;
 cout << "Area (Base, Height): " << t.area(5,10) << endl;
 cout << "Area (Three Sides): " << t.area(3, 4, 5) << endl;
 return 0;
+}
 ```
 
 
