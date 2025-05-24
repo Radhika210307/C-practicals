@@ -502,13 +502,13 @@ public:
 // Area with base & height
 double area(double base, double height) {
 return 0.5 * base * height;
+}
 
 // Area with 3 sides (Heron's formula)
 double area(double a, double b, double c) {
 double s = (a + b + c) / 2;
 return sqrt(s * (s - a) * (s -b)* (s -c));
 
-}
 
 }
 
